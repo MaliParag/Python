@@ -17,21 +17,27 @@ class Stack:
 	def peek(self):
 		return self.stack[len(self.stack)-1]
 
-s = Stack()
-s.push(5)
-print(s)
-s.push(10)
-print(s)
-s.push(15)
-print(s)
+	def isEmpty(self):
+		if len(self.stack) == 0:
+			return True
+		else:
+			return False
 
-print(s)
-print(s.pop())
-print(s)
+#s = Stack()
+#s.push(5)
+#print(s)
+#s.push(10)
+#print(s)
+#s.push(15)
+#print(s)
 
-print(s.peek())
+#print(s)
+#print(s.pop())
+#print(s)
 
-print(s)
-print(s.pop())
-print(s.pop())
-print(s.peek())
+#print(s.peek())
+
+#print(s)
+#print(s.pop())
+#print(s.pop())
+#print(s.peek())
